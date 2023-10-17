@@ -6,15 +6,22 @@ let camino = "";
 
 let decision = "";
 
-alert("Hola "+name+", para poder continuar, deberás elegir uno de los siguientes caminos:");
+while(camino!="SALIR"){
 
-alert("El primer camino, te lleva por la ciudad mas conflictiva del condado.");
+    alert("Hola "+name+", para poder continuar, deberás elegir uno de los siguientes caminos:");
 
-alert("El segundo camino, pasa por el medio del bosque. No parece muy peligroso...");
+    alert("El primer camino, te lleva por la ciudad mas conflictiva del condado.");
 
-alert("El tercer camino.. Se desconoce absolutamente a donde va.");
+    alert("El segundo camino, pasa por el medio del bosque. No parece muy peligroso...");
 
-camino = prompt("Elija entre el camino A, B o C.");
+    alert("El tercer camino.. Se desconoce absolutamente a donde va.");
+
+    camino = prompt("Elija entre el camino A, B o C. Ponga SALIR para salir.");
+
+    if(camino == "A" || camino == "B" || camino == "C"){
+        break;
+    }
+}
 
 if(camino == "A"){
     alert("Das los primeros pasos dentro de esta inmensa oscuridad, cuando escuchas una voz. Alguien te llama..");
